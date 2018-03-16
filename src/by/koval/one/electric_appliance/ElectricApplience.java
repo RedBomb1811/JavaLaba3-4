@@ -1,5 +1,7 @@
 package by.koval.one.electric_appliance;
 
+import by.koval.one.electric_appliance_exception.ElectricApplianceException;
+
 import java.util.Date;
 
 public abstract class ElectricApplience {
@@ -43,6 +45,6 @@ public abstract class ElectricApplience {
         this.switchOnApplience = switchOnApplience;
     }
 
-    abstract public void turnOn();
+    abstract public void turnOn() throws ElectricApplianceException;
     abstract public void turnOff();
 }
