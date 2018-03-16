@@ -8,22 +8,22 @@ import java.util.Date;
 public class Fridge extends ElectricApplience{
     private static final Logger LOG = Logger.getLogger(Fridge.class);
 
-    public Fridge(int power, int voltage) {
-        super(power, voltage);
+    public Fridge(String name, int power, int voltage) {
+        super(name, power, voltage);
     }
 
     @Override
     public void turnOn() {
         this.switchOnApplience = new Date();
         this.state = true;
-        LOG.info("The fridge was turned on!");
+        LOG.info("The " + this.getName() + " was turned on!");
 
     }
 
     @Override
     public void turnOff() {
         this.state = false;
-        LOG.info("The fridge was turned off!");
+        LOG.info("The " + this.getName() + " was turned off!");
     }
 
     public long workingHours(){

@@ -4,17 +4,26 @@ import by.koval.one.electric_appliance_exception.ElectricApplianceException;
 
 import java.util.Date;
 
-public abstract class ElectricApplience {
+public abstract class ElectricApplience{
+    String name;
     int power;
     boolean state;
     int voltage;
     Date switchOnApplience;
 
-    public ElectricApplience(int power, int voltage) {
+    public ElectricApplience(String name, int power, int voltage) {
+        this.name = name;
         this.power = power;
         this.state = false;
         this.voltage = voltage;
         this.switchOnApplience = null;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getPower() {
@@ -45,6 +54,6 @@ public abstract class ElectricApplience {
         this.switchOnApplience = switchOnApplience;
     }
 
-    abstract public void turnOn() throws ElectricApplianceException;
+    abstract public void turnOn();
     abstract public void turnOff();
 }
