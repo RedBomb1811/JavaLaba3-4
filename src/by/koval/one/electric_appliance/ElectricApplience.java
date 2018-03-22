@@ -2,6 +2,7 @@ package by.koval.one.electric_appliance;
 
 import by.koval.one.electric_appliance_exception.ElectricApplianceException;
 
+import java.util.Comparator;
 import java.util.Date;
 
 public abstract class ElectricApplience{

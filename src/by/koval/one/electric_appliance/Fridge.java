@@ -1,4 +1,5 @@
 package by.koval.one.electric_appliance;
+import java.util.Comparator;
 import by.koval.one.electric_appliance_exception.*;
 import org.apache.log4j.Logger;
 
@@ -43,3 +44,4 @@ public class Fridge extends ElectricApplience{
                 '}';
     }
 }
+

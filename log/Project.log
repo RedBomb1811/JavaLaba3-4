@@ -1,12 +1,80 @@
-16.03.2018 23:08:26 [main] INFO  main.Main  - Starting program_____________________________
-16.03.2018 23:08:26 [main] INFO  by.koval.one.electric_appliance.Fridge  - The fridge was turned on!
-16.03.2018 23:08:26 [main] INFO  by.koval.one.electric_appliance.Fridge  - The by.koval.one.electric_appliance.Fridge was added to the apartment!
-16.03.2018 23:08:26 [main] INFO  by.koval.one.electric_appliance.Fridge  - The by.koval.one.electric_appliance.Fridge was added to the apartment!
-16.03.2018 23:11:59 [main] INFO  main.Main  - Starting program_____________________________
-16.03.2018 23:11:59 [main] INFO  by.koval.one.electric_appliance.Fridge  - The fridge was turned on!
-16.03.2018 23:11:59 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was added to the apartment!
-16.03.2018 23:11:59 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_2 was added to the apartment!
-16.03.2018 23:36:50 [main] INFO  main.Main  - Starting program_____________________________
-16.03.2018 23:36:50 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was turned on!
-16.03.2018 23:36:50 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was added to the apartment!
-16.03.2018 23:36:50 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_2 was added to the apartment!
+23.03.2018 00:28:05 [main] INFO  main.Main  - Starting program_____________________________
+23.03.2018 00:28:05 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was turned on!
+23.03.2018 00:28:05 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_1 was added to the Apartment_1
+23.03.2018 00:28:05 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 00:28:05 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - The Apartment_1 was added for the Manager_1
+23.03.2018 01:37:15 [main] INFO  main.Main  - Starting program_____________________________
+23.03.2018 01:37:16 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was turned on!
+23.03.2018 01:37:16 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_1 was added to the Apartment_1
+23.03.2018 01:37:16 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:37:16 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - The Apartment_1 was added for the Manager_1
+23.03.2018 01:38:16 [main] INFO  main.Main  - Starting program_____________________________
+23.03.2018 01:38:16 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was turned on!
+23.03.2018 01:38:16 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_1 was added to the Apartment_1
+23.03.2018 01:38:16 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:38:16 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:38:16 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - The Apartment_1 was added for the Manager_1
+23.03.2018 01:38:39 [main] INFO  main.Main  - Starting program_____________________________
+23.03.2018 01:38:39 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was turned on!
+23.03.2018 01:38:39 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_1 was added to the Apartment_1
+23.03.2018 01:38:39 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:38:39 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:38:39 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - The Apartment_1 was added for the Manager_1
+23.03.2018 01:47:35 [main] INFO  main.Main  - Starting program_____________________________
+23.03.2018 01:47:35 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was turned on!
+23.03.2018 01:47:35 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_1 was added to the Apartment_1
+23.03.2018 01:47:35 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:47:35 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:47:35 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - The Apartment_1 was added for the Manager_1
+23.03.2018 01:47:46 [main] INFO  main.Main  - Starting program_____________________________
+23.03.2018 01:47:46 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was turned on!
+23.03.2018 01:47:46 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_1 was added to the Apartment_1
+23.03.2018 01:47:46 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:47:46 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:47:46 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - The Apartment_1 was added for the Manager_1
+23.03.2018 01:48:14 [main] INFO  main.Main  - Starting program_____________________________
+23.03.2018 01:48:14 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was turned on!
+23.03.2018 01:48:14 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_1 was added to the Apartment_1
+23.03.2018 01:48:14 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:48:14 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:48:14 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - The Apartment_1 was added for the Manager_1
+23.03.2018 01:58:40 [main] INFO  main.Main  - Starting program_____________________________
+23.03.2018 01:58:40 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was turned on!
+23.03.2018 01:58:40 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_1 was added to the Apartment_1
+23.03.2018 01:58:40 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:58:40 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:58:40 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - The Apartment_1 was added for the Manager_1
+23.03.2018 01:58:40 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - Calculated total power!
+23.03.2018 01:58:40 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - Sorting!
+23.03.2018 01:59:10 [main] INFO  main.Main  - Starting program_____________________________
+23.03.2018 01:59:10 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was turned on!
+23.03.2018 01:59:10 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_1 was added to the Apartment_1
+23.03.2018 01:59:10 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:59:10 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 01:59:10 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - The Apartment_1 was added for the Manager_1
+23.03.2018 01:59:10 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - Calculated total power!
+23.03.2018 01:59:10 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - Sorting!
+23.03.2018 02:00:55 [main] INFO  main.Main  - Starting program_____________________________
+23.03.2018 02:00:55 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was turned on!
+23.03.2018 02:00:55 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_1 was added to the Apartment_1
+23.03.2018 02:00:55 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 02:00:55 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 02:00:55 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - The Apartment_1 was added for the Manager_1
+23.03.2018 02:00:55 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - Calculated total power!
+23.03.2018 02:00:55 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - Sorting!
+23.03.2018 02:01:13 [main] INFO  main.Main  - Starting program_____________________________
+23.03.2018 02:01:13 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was turned on!
+23.03.2018 02:01:13 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_1 was added to the Apartment_1
+23.03.2018 02:01:13 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 02:01:13 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 02:01:13 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - The Apartment_1 was added for the Manager_1
+23.03.2018 02:01:13 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - Calculated total power!
+23.03.2018 02:01:13 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - Sorting!
+23.03.2018 02:08:21 [main] INFO  main.Main  - Starting program_____________________________
+23.03.2018 02:08:21 [main] INFO  by.koval.one.electric_appliance.Fridge  - The Fridge_1 was turned on!
+23.03.2018 02:08:21 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_1 was added to the Apartment_1
+23.03.2018 02:08:21 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 02:08:21 [main] INFO  by.koval.one.apartment.Apartment  - The Fridge_2 was added to the Apartment_1
+23.03.2018 02:08:21 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - The Apartment_1 was added for the Manager_1
+23.03.2018 02:08:21 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - Calculated total power!
+23.03.2018 02:08:31 [main] INFO  by.koval.one.electric_applience_manager.ElectricApplienceManager  - Sorting!

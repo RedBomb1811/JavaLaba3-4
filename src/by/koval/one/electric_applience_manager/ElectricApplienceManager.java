@@ -11,11 +11,17 @@ import java.util.Comparator;
 
 interface ManagerInterface{
     void addApartmentManager(Apartment param1);
-
-    ArrayList<? super ElectricApplience> getAllApplience();
+    ArrayList<ElectricApplience> getAllApplience();
 }
 
 public class ElectricApplienceManager implements ManagerInterface {
+
+    public enum SortType{
+        DESC,
+        NONE,
+        ESC
+    }
+
     private static final Logger LOG = Logger.getLogger(ElectricApplienceManager.class);
 
     public Apartment apartment;
@@ -40,16 +46,17 @@ public class ElectricApplienceManager implements ManagerInterface {
 
     @Override
     public void addApartmentManager(Apartment param1) {
-        LOG.info("The " + getApartment().getName() + " was added for the " + this.getName());
+        LOG.info("The " + param1.getName() + " was added for the " + this.getName());
         this.apartment = param1;
     }
 
     @Override
-    public ArrayList<? super ElectricApplience> getAllApplience() {
+    public ArrayList<ElectricApplience> getAllApplience() {
         return this.apartment.listOfElectricApplience;
     }
 
     public int calculateTotalPower(){
+        LOG.info("Calculated total power!");
         int sumPower = 0;
         for (Object obj :
                 this.apartment.listOfElectricApplience) {
@@ -58,7 +65,29 @@ public class ElectricApplienceManager implements ManagerInterface {
         return sumPower;
     }
 
-    public void sort(){
+    public void sort(SortType type){
+        LOG.info("Sorting!");
+        int k = type.ordinal()-1;
+        Collections.sort(apartment.getListOfElectricApplience(), new Comparator<ElectricApplience>() {
+            public int compare(ElectricApplience o1, ElectricApplience o2) {
+                if(o1.getPower() > o2.getPower())
+                    return 1*k;
+                if(o1.getPower() < o2.getPower())
+                    return -1*k;
+                return 0*k;
+            }
+        });
+    }
+
+    public ArrayList<ElectricApplience> getApplienceInRange(int min, int max){
+        LOG.info("Get applience in the range!");
+        ArrayList<ElectricApplience> ret = new ArrayList<>();
+        for (ElectricApplience elem :
+                this.getAllApplience()) {
+            if (elem.getPower() >= min && elem.getPower() <= max)
+                ret.add(elem);
+        }
+        return ret;
     }
 
 }
