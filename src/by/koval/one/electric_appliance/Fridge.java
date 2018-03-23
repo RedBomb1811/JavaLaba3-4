@@ -41,7 +41,7 @@ public class Fridge extends ElectricApplience{
                 ", state=" + state +
                 ", voltage=" + voltage +
                 ", switchOnApplience=" + String.format("%02d:%02d:%02d", time / 1000 / 3600, time / 1000 / 60 % 60, time / 1000 % 60) +
-                '}';
+                "}";
     }
 }
 

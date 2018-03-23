@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class Main {
@@ -25,6 +26,7 @@ public class Main {
     public static void main(String[] args) {
         LOG.info("Starting program_____________________________");
         try {
+            Scanner in = new Scanner(System.in);
             ConcreteCreatorFridge concreteCreatorFridge = new ConcreteCreatorFridge();
             ElectricApplience fridge1 = concreteCreatorFridge.factoryMethod("Fridge_1", 3000, 220);
             ElectricApplience fridge2 = concreteCreatorFridge.factoryMethod("Fridge_2",200, 24);
@@ -39,29 +41,50 @@ public class Main {
             ap1.addApplience(fridge2);
             ap1.addApplience(fridge3);
 
-            ElectricApplienceManager manager1 = new ElectricApplienceManager("Manager_1");
+            ElectricApplienceManager manager1 = ElectricApplienceManager.getInstance("Manager_1");
             manager1.addApartmentManager(ap1);
-            System.out.println(manager1.calculateTotalPower());
-            System.out.println(fridge1.toString());
+            while (true){
+                System.out.println(
+                                "-------------------------------------------\n"+
+                                "1.\tПосчитать общую мощность\n"+
+                                "2.\tОтсортировать список устройств\n"+
+                                "3.\tНайти элементы в диапазоне мощности\n"+
+                                "4.\tВывод списка элементов\n"+
+                                "0. Выход\n"+
+                                "-------------------------------------------\n");
+                switch (in.nextInt()){
+                    case 1:
+                        System.out.println("Общая мощность: " + manager1.calculateTotalPower());
+                        break;
+                    case 2:
+                        System.out.println("По убыванию:\t0\nПо\tвозрастанию: 1");
+                        if (in.nextInt()==0)
+                            manager1.sort(SortType.DESC);
+                        else
+                            manager1.sort(SortType.ESC);
+                        System.out.println("Отсортирован!");
+                        break;
+                    case 3:
+                        System.out.println("Min:");
+                        int min = in.nextInt();
+                        System.out.println("Max:");
+                        int max = in.nextInt();
+                        System.out.println("-------------------------------------------");
+                        for (ElectricApplience elem :
+                                manager1.getApplienceInRange(min, max)) {
+                            System.out.println(elem.toString());
+                        }
+                        break;
+                    case 4:
+                        for (ElectricApplience elem :
+                                manager1.getAllApplience()) {
+                            System.out.println(elem.toString());
+                        }
+                        break;
+                    case 0: System.exit(0);
+                }
 
-            Thread.sleep(10000);
-
-            manager1.sort(SortType.DESC);
-            for (ElectricApplience a :
-                    manager1.getAllApplience()) {
-                System.out.printf(a.toString());
             }
-
-            System.out.println("-----------");
-            ArrayList<ElectricApplience> eee = manager1.getApplienceInRange(550, 55000);
-            for (ElectricApplience elem :
-                    eee) {
-                System.out.println(elem);
-            }
-
-            //TODO класс светильник со внутренним классом лампочка(перечисления)
-            //TODO консольное меню
-
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

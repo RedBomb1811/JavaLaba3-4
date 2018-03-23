@@ -16,6 +16,18 @@ interface ManagerInterface{
 
 public class ElectricApplienceManager implements ManagerInterface {
 
+    public static ElectricApplienceManager instance;
+
+    private ElectricApplienceManager(String name) {
+        this.name = name;
+    }
+
+    public static ElectricApplienceManager getInstance(String name){
+        if(instance == null)
+            instance = new ElectricApplienceManager(name);
+        return instance;
+    }
+
     public enum SortType{
         DESC,
         NONE,
@@ -38,10 +50,6 @@ public class ElectricApplienceManager implements ManagerInterface {
     }
     public void setApartment(Apartment apartment) {
         this.apartment = apartment;
-    }
-
-    public ElectricApplienceManager(String name) {
-        this.name = name;
     }
 
     @Override
