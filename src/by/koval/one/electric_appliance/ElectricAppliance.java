@@ -2,17 +2,17 @@ package by.koval.one.electric_appliance;
 
 import by.koval.one.electric_appliance_exception.ElectricApplianceException;
 
-import java.util.Comparator;
+import java.io.Serializable;
 import java.util.Date;
 
-public abstract class ElectricApplience{
+public abstract class ElectricAppliance implements Serializable {
     String name;
     int power;
     boolean state;
     int voltage;
     Date switchOnApplience;
 
-    public ElectricApplience(String name, int power, int voltage) {
+    public ElectricAppliance(String name, int power, int voltage) {
         this.name = name;
         this.power = power;
         this.state = false;

@@ -1,12 +1,18 @@
 package by.koval.one.electric_appliance;
-import java.util.Comparator;
-import by.koval.one.electric_appliance_exception.*;
 import org.apache.log4j.Logger;
 
-import java.text.SimpleDateFormat;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamConstants;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Date;
 
-public class Fridge extends ElectricApplience{
+import static java.lang.System.out;
+
+public class Fridge extends ElectricAppliance {
     private static final Logger LOG = Logger.getLogger(Fridge.class);
 
     public Fridge(String name, int power, int voltage) {
@@ -37,7 +43,8 @@ public class Fridge extends ElectricApplience{
     public String toString() {
         long time = workingHours();
         return "Fridge{" +
-                "power=" + power +
+                "Name=" + name +
+                ", power=" + power +
                 ", state=" + state +
                 ", voltage=" + voltage +
                 ", switchOnApplience=" + String.format("%02d:%02d:%02d", time / 1000 / 3600, time / 1000 / 60 % 60, time / 1000 % 60) +

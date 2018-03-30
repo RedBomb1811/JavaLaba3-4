@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<listOfElectricAppliances
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="fridges.xsd">
+    <electricAppliance>
+        <name>FridgeXML_1</name>
+        <power>20</power>
+        <voltage>24</voltage>
+    </electricAppliance>
+    <electricAppliance>
+        <name>FridgeXML_2</name>
+        <power>60</power>
+        <voltage>120</voltage>
+    </electricAppliance>
+</listOfElectricAppliances>

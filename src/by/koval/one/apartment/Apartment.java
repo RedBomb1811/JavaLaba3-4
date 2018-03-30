@@ -1,16 +1,16 @@
 package by.koval.one.apartment;
 
-import by.koval.one.electric_appliance.ElectricApplience;
-import by.koval.one.electric_appliance.Fridge;
+import by.koval.one.electric_appliance.ElectricAppliance;
 import org.apache.log4j.Logger;
 
+import java.io.Serializable;
 import java.util.*;
 
-public class Apartment {
+public class Apartment implements Serializable{
     private static final Logger LOG = Logger.getLogger(Apartment.class);
 
     String name;
-    public ArrayList<ElectricApplience> listOfElectricApplience;
+    public ArrayList<ElectricAppliance> listOfElectricAppliance;
 
     public String getName() {
         return name;
@@ -18,21 +18,20 @@ public class Apartment {
     public void setName(String name) {
         this.name = name;
     }
-    public ArrayList<ElectricApplience> getListOfElectricApplience() {
-        return listOfElectricApplience;
+    public ArrayList<ElectricAppliance> getListOfElectricAppliance() {
+        return listOfElectricAppliance;
     }
-    public void setListOfElectricApplience(ArrayList<ElectricApplience> listOfElectricApplience) {
-        this.listOfElectricApplience = listOfElectricApplience;
+    public void setListOfElectricAppliance(ArrayList<ElectricAppliance> listOfElectricAppliance) {
+        this.listOfElectricAppliance = listOfElectricAppliance;
     }
-
 
     public Apartment(String apart1) {
         name = apart1;
-        listOfElectricApplience = new ArrayList<ElectricApplience>();
+        listOfElectricAppliance = new ArrayList<ElectricAppliance>();
     }
 
-    public boolean addApplience(ElectricApplience obj) {
-        boolean ret = this.listOfElectricApplience.add(obj);
+    public boolean addApplience(ElectricAppliance obj) {
+        boolean ret = this.listOfElectricAppliance.add(obj);
         if (ret)
             LOG.info("The " + obj.getName() + " was added to the " + this.getName());
         else
@@ -42,7 +41,7 @@ public class Apartment {
     }
 
     public int countAllApplience() {
-        return listOfElectricApplience.size();
+        return listOfElectricAppliance.size();
     }
 }
 

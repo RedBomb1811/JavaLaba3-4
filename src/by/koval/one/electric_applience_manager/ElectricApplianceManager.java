@@ -1,30 +1,30 @@
 package by.koval.one.electric_applience_manager;
 
 import by.koval.one.apartment.Apartment;
-import by.koval.one.electric_appliance.ElectricApplience;
-import main.Main;
+import by.koval.one.electric_appliance.ElectricAppliance;
 import org.apache.log4j.Logger;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
 interface ManagerInterface{
     void addApartmentManager(Apartment param1);
-    ArrayList<ElectricApplience> getAllApplience();
+    ArrayList<ElectricAppliance> getAllAppliance();
 }
 
-public class ElectricApplienceManager implements ManagerInterface {
+public class ElectricApplianceManager implements ManagerInterface, Serializable {
 
-    public static ElectricApplienceManager instance;
+    public static ElectricApplianceManager instance;
 
-    private ElectricApplienceManager(String name) {
+    private ElectricApplianceManager(String name) {
         this.name = name;
     }
 
-    public static ElectricApplienceManager getInstance(String name){
+    public static ElectricApplianceManager getInstance(String name){
         if(instance == null)
-            instance = new ElectricApplienceManager(name);
+            instance = new ElectricApplianceManager(name);
         return instance;
     }
 
@@ -34,7 +34,7 @@ public class ElectricApplienceManager implements ManagerInterface {
         ESC
     }
 
-    private static final Logger LOG = Logger.getLogger(ElectricApplienceManager.class);
+    private static final Logger LOG = Logger.getLogger(ElectricApplianceManager.class);
 
     public Apartment apartment;
     public String name;
@@ -59,16 +59,16 @@ public class ElectricApplienceManager implements ManagerInterface {
     }
 
     @Override
-    public ArrayList<ElectricApplience> getAllApplience() {
-        return this.apartment.listOfElectricApplience;
+    public ArrayList<ElectricAppliance> getAllAppliance() {
+        return this.apartment.listOfElectricAppliance;
     }
 
     public int calculateTotalPower(){
         LOG.info("Calculated total power!");
         int sumPower = 0;
         for (Object obj :
-                this.apartment.listOfElectricApplience) {
-            sumPower += ((ElectricApplience) obj).getPower();
+                this.apartment.listOfElectricAppliance) {
+            sumPower += ((ElectricAppliance) obj).getPower();
         }
         return sumPower;
     }
@@ -76,8 +76,8 @@ public class ElectricApplienceManager implements ManagerInterface {
     public void sort(SortType type){
         LOG.info("Sorting!");
         int k = type.ordinal()-1;
-        Collections.sort(apartment.getListOfElectricApplience(), new Comparator<ElectricApplience>() {
-            public int compare(ElectricApplience o1, ElectricApplience o2) {
+        Collections.sort(apartment.getListOfElectricAppliance(), new Comparator<ElectricAppliance>() {
+            public int compare(ElectricAppliance o1, ElectricAppliance o2) {
                 if(o1.getPower() > o2.getPower())
                     return 1*k;
                 if(o1.getPower() < o2.getPower())
@@ -87,11 +87,11 @@ public class ElectricApplienceManager implements ManagerInterface {
         });
     }
 
-    public ArrayList<ElectricApplience> getApplienceInRange(int min, int max){
+    public ArrayList<ElectricAppliance> getApplienceInRange(int min, int max){
         LOG.info("Get applience in the range!");
-        ArrayList<ElectricApplience> ret = new ArrayList<>();
-        for (ElectricApplience elem :
-                this.getAllApplience()) {
+        ArrayList<ElectricAppliance> ret = new ArrayList<>();
+        for (ElectricAppliance elem :
+                this.getAllAppliance()) {
             if (elem.getPower() >= min && elem.getPower() <= max)
                 ret.add(elem);
         }
